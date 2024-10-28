@@ -1,0 +1,145 @@
+[
+    {
+        "_id": "65d39162578b6f0008845a7d",
+        "grouptag": [],
+        "model": "custom",
+        "name": "Mester",
+        "currentLocation": {
+            "type": "Point",
+            "coordinates": [
+                18.961928,
+                47.56467
+            ],
+            "timestamp": "2024-02-19T17:35:30.579Z"
+        },
+        "exposure": "outdoor",
+        "sensors": [
+            {
+                "_id": "65d39162578b6f0008845a7e",
+                "icon": "osem-cloud",
+                "title": "PM1.0",
+                "unit": "µg/m3",
+                "sensorType": "iotroniq",
+                "lastMeasurement": {
+                    "createdAt": "2024-10-28T14:59:18.634Z",
+                    "value": "16.90"
+                }
+            },
+            {
+                "_id": "65d39162578b6f0008845a7f",
+                "icon": "osem-cloud",
+                "title": "PM2.5",
+                "unit": "µg/m3",
+                "sensorType": "iotroniq",
+                "lastMeasurement": {
+                    "createdAt": "2024-10-28T14:59:18.634Z",
+                    "value": "18.23"
+                }
+            },
+            {
+                "_id": "65d39162578b6f0008845a80",
+                "icon": "osem-cloud",
+                "title": "PM4.0",
+                "unit": "µg/m3",
+                "sensorType": "iotroniq",
+                "lastMeasurement": {
+                    "createdAt": "2024-10-28T14:59:18.634Z",
+                    "value": "18.65"
+                }
+            },
+            {
+                "_id": "65d39162578b6f0008845a81",
+                "icon": "osem-cloud",
+                "title": "PM10",
+                "unit": "µg/m3",
+                "sensorType": "iotroniq",
+                "lastMeasurement": {
+                    "createdAt": "2024-10-28T14:59:18.634Z",
+                    "value": "18.87"
+                }
+            },
+            {
+                "_id": "65d39162578b6f0008845a82",
+                "icon": "osem-cloud",
+                "title": "NOx index",
+                "unit": "ppm",
+                "sensorType": "iotroniq",
+                "lastMeasurement": {
+                    "createdAt": "2024-10-28T14:59:18.634Z",
+                    "value": "1.00"
+                }
+            },
+            {
+                "_id": "65d39162578b6f0008845a83",
+                "icon": "osem-cloud",
+                "title": "VOC index",
+                "unit": "ppm",
+                "sensorType": "iotroniq",
+                "lastMeasurement": {
+                    "createdAt": "2024-10-28T14:59:18.634Z",
+                    "value": "329.50"
+                }
+            },
+            {
+                "_id": "65d39162578b6f0008845a84",
+                "icon": "osem-humidity",
+                "title": "realtive humidity",
+                "unit": "%",
+                "sensorType": "iotroniq",
+                "lastMeasurement": {
+                    "createdAt": "2024-10-28T14:59:18.634Z",
+                    "value": "65.69"
+                }
+            },
+            {
+                "_id": "65d39162578b6f0008845a85",
+                "icon": "osem-barometer",
+                "title": "pressure",
+                "unit": "Pa",
+                "sensorType": "iotroniq",
+                "lastMeasurement": {
+                    "createdAt": "2024-10-28T14:59:18.634Z",
+                    "value": "99665.99"
+                }
+            },
+            {
+                "_id": "65d39162578b6f0008845a86",
+                "icon": "osem-thermometer",
+                "title": "temperature",
+                "unit": "°C",
+                "sensorType": "iotroniq",
+                "lastMeasurement": {
+                    "createdAt": "2024-10-28T14:59:18.634Z",
+                    "value": "18.35"
+                }
+            },
+            {
+                "_id": "65d39162578b6f0008845a87",
+                "icon": "osem-battery",
+                "title": "power supply",
+                "unit": "V",
+                "sensorType": "iotroniq",
+                "lastMeasurement": {
+                    "value": "4.81",
+                    "createdAt": "2024-10-28T14:59:18.634Z"
+                }
+            }
+        ],
+        "updatedAt": "2024-10-28T14:59:18.906Z",
+        "createdAt": "2024-02-19T17:35:30.586Z",
+        "lastMeasurementAt": "2024-10-28T14:59:18.634Z",
+        "loc": [
+            {
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        18.961928,
+                        47.56467
+                    ],
+                    "timestamp": "2024-02-19T17:35:30.579Z"
+                },
+                "type": "Feature"
+            }
+        ]
+    }
+]
