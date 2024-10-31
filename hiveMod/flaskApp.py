@@ -1,13 +1,7 @@
 from datetime import datetime, timedelta
-from math import e
-import stat
-from turtle import st
 from flask import Flask
-from requests import get
 import aiohttp
-from app import readProjectVersion 
-import json
-app = Flask(__name__)
+from hiveMod.app import readProjectVersion
 
 
 async def fetch(url):
@@ -17,10 +11,10 @@ async def fetch(url):
             data = await response.json()
             return status, data
 # API Client
-
+app = Flask(__name__)
 
 @app.route("/")
-def hello_world():
+def helloWorld():
     return "<p>Hello, World!</p>"
 @app.route("/version")
 def version():
@@ -32,7 +26,7 @@ async def temperature():
     oneHourBefore = currentTime - timedelta(hours=2)
     currentTimeStr = currentTime.isoformat(timespec='seconds') + 'Z'
     oneHourBeforeStr = oneHourBefore.isoformat(timespec='seconds') + 'Z'
-    print(oneHourBeforeStr)
+    print(f"{'\033[107m'}{oneHourBeforeStr}{'\033[0m'}")
     print(currentTimeStr)
     # 2024-10-28T13:45:00Z
     REQUEST =f"https://api.opensensemap.org/boxes?date={oneHourBeforeStr},{currentTimeStr}&phenomenon=temperature"
@@ -64,5 +58,5 @@ async def temperature():
         average = sum(temperature_values) / len(temperature_values)
         
         return f"<p>Values measured: {temperature_values}</p><p>Average: {average}</p>"
-
-    
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=5001)
